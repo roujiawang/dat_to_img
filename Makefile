@@ -10,7 +10,7 @@ IMG_FOLDER = img
 # Make image
 image:
 	@echo "Activating virtual environment..."
-	@source $(VENV)/bin/activate && $(PYTHON) $(SCRIPT)
+	@. $(VENV)/bin/activate && $(PYTHON) $(SCRIPT)
 	@echo "Deactivating virtual environment..."
 
 # Clean dat folder
